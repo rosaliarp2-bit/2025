@@ -9,9 +9,11 @@
 }
 *{box-sizing:border-box}
 body{
-  margin:0;
-  background:linear-gradient(180deg,#071122 0%,var(--bg) 100%);
+ margin:0;
   color:var(--text);
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), /* overlay semitransparente */
+    url("portfolio-landing-2.png") center/cover no-repeat fixed;   /* ruta local en repo */
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   line-height:1.5;
