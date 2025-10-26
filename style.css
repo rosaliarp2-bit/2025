@@ -13,7 +13,7 @@ body{
   color:var(--text);
   background:
     linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), /* overlay semitransparente */
-    url("https://ik.imagekit.io/back/portfolio-landing-02.png?updatedAt=1761514739422") center/cover no-repeat fixed;   /* ruta local en repo */
+    url("https://rosaliarp2-bit.github.io/2025/portfolio-landing-02.png") center/cover no-repeat fixed;   /* ruta local en repo */
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   line-height:1.5;
