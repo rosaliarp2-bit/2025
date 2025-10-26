@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>rparteycratividad — Portfolio</title>
+  <meta name="description" content="Portfolio de arte, diseño y creatividad." />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">rparteycratividad</h1>
+      <nav class="nav">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <h2>Hola, soy artista y diseñadora</h2>
+      <p>Portfolio de arte, diseño y creatividad.</p>
+      <p><a class="btn" href="#proyectos">Ver proyectos</a> <a class="btn ghost" href="Tu_CV.pdf" target="_blank">Ver CV</a></p>
+    </section>
+
+    <section id="proyectos" class="container projects">
+      <h3>Proyectos destacados</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="placeholder-1.png" alt="Proyecto 1">
+          <h4>Proyecto 1</h4>
+          <p>Breve descripción. Técnica: ilustración / collage / web</p>
+          <p><a href="#" target="_blank">Ver demo</a> · <a href="#" target="_blank">Detalles</a></p>
+        </article>
+
+        <article class="card">
+          <img src="placeholder-2.png" alt="Proyecto 2">
+          <h4>Proyecto 2</h4>
+          <p>Breve descripción. Técnica: diseño digital</p>
+          <p><a href="#" target="_blank">Ver demo</a> · <a href="#" target="_blank">Detalles</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="container about">
+      <h3>Sobre mí</h3>
+      <p>Soy artista y diseñadora interesada en la experimentación visual y proyectos web. Habilidades: Illustrator, Photoshop, HTML/CSS, prototipado.</p>
+    </section>
+
+    <section id="contacto" class="container contact">
+      <h3>Contacto</h3>
+      <p>¿Quieres colaborar? Envíame un mensaje.</p>
+      <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+        <label>
+          Nombre
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="_replyto" required>
+        </label>
+        <label>
+          Mensaje
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+      <p>O escríbeme a: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> rparteycratividad — <a href="https://github.com/rosaliarp2-bit" target="_blank">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
